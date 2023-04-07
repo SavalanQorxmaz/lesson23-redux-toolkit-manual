@@ -7,7 +7,7 @@ const ColorChanger = () => {
   const dispatch = useDispatch()
   // const [resetColor, setresetColor] = useState(false)
   return (
-    <div>
+    <div className='color-changer'>
 
         <button onClick={()=>dispatch(changeColor())}>Change Color</button>
         <button onClick={()=>dispatch(resetColor())}>Reset Color</button>

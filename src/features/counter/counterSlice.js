@@ -23,14 +23,17 @@ export const counterSlice = createSlice({
         },
 
         incrementByAmount: (state, action)=>{
-            if(action.payload >= 0){
+            // if(action.payload >= 0){
 
+            //     state.count += action.payload
+            // }
+            // else if(action.payload < 0){
+            //     if(state.count+action.payload >= 0){
+            //         state.count += action.payload
+            //     }
+            // }
+            if((action.payload + state.count) >= 0){
                 state.count += action.payload
-            }
-            else if(action.payload < 0){
-                if(state.count+action.payload >= 0){
-                    state.count += action.payload
-                }
             }
         },
 

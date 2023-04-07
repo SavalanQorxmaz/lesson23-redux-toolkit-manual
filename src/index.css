@@ -21,3 +21,14 @@ code {
   align-items: center;
   justify-content: space-around;
 }
+
+.counter {
+  height: 100px;
+  background-color: beige;
+}
+
+.color-changer {
+  padding: 10px;
+  text-align: center;
+  background-color: bisque;
+}
